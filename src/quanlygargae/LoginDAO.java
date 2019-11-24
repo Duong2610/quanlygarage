@@ -23,7 +23,7 @@ public class LoginDAO {
                 acc = frm.getUser();
                 if(checkUser(acc)){
                     frm.showMessage("Login succesfully!");
-                    Front f2 = new Front();
+                    MenuFrm f2 = new Front();
                     f2.setVisible(true);
                     frm.dispose();
                 }else{
