@@ -9,6 +9,7 @@ public class main {
 		f.setVisible(true);
 		f.setTitle("Quan ly garage");
 		f.setSize(300,150);
+		f.setLocation(200, 10);
 	}
 
 }

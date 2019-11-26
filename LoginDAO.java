@@ -22,15 +22,16 @@ public class LoginDAO {
             try {
                 acc = frm.getUser();
                 if(checkUser(acc)){
-                    frm.showMessage("Login succesfully!");
-                    Front f2 = new Front();
+                    MenuFrm f2 = new MenuFrm();
+                    f2.setSize(300,300);
                     f2.setVisible(true);
+                    f2.setLocation(200, 10);
                     frm.dispose();
                 }else{
                     frm.showMessage("Invalid username and/or password!");
                 }                
             } catch (Exception ex) {
-                frm.showMessage(ex.getStackTrace().toString());
+                frm.showMessage(ex.toString());
             }
         }
     }
@@ -62,4 +63,5 @@ public class LoginDAO {
         } 
         return false;
       }
+
 } 

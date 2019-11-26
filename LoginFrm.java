@@ -19,8 +19,7 @@ public class LoginFrm extends JFrame implements ActionListener{
     private account acc;
  
     public LoginFrm(){
-        
- 
+       
         txttaikhoan = new JTextField(15);
         txtmatkhau = new JPasswordField(15);
         txtmatkhau.setEchoChar('*');
